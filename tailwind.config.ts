@@ -52,16 +52,18 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				}
+				// Romantic theme colors
+				'bg': 'hsl(var(--bg))',
+				'bg-soft': 'hsl(var(--bg-soft))',
+				'rose': 'hsl(var(--rose))',
+				'rose-strong': 'hsl(var(--rose-strong))',
+				'gold': 'hsl(var(--gold))',
+				'text': 'hsl(var(--text))',
+				'muted-text': 'hsl(var(--muted))'
+			},
+			fontFamily: {
+				'heading': ['var(--font-heading)'],
+				'body': ['var(--font-body)']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
