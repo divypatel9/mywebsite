@@ -52,14 +52,15 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Romantic theme colors
+				// Accessible romantic theme colors
 				'bg': 'hsl(var(--bg))',
 				'bg-soft': 'hsl(var(--bg-soft))',
 				'rose': 'hsl(var(--rose))',
-				'rose-strong': 'hsl(var(--rose-strong))',
+				'rose-soft': 'hsl(var(--rose-soft))',
 				'gold': 'hsl(var(--gold))',
-				'text': 'hsl(var(--text))',
-				'muted-text': 'hsl(var(--muted))'
+				'text-primary': 'hsl(var(--text-primary))',
+				'text-secondary': 'hsl(var(--text-secondary))',
+				'text-highlight': 'hsl(var(--text-highlight))'
 			},
 			fontFamily: {
 				'heading': ['var(--font-heading)'],

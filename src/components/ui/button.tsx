@@ -18,8 +18,8 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        romantic: "bg-rose-strong text-bg border border-rose-strong hover:bg-rose hover:-translate-y-0.5 transition-all duration-300 shadow-lg hover:shadow-glow",
-        "romantic-outline": "bg-transparent text-rose border border-rose hover:bg-rose/10 hover:-translate-y-0.5 transition-all duration-300",
+        romantic: "bg-gradient-to-r from-rose to-rose-soft text-text-primary border-0 hover:-translate-y-0.5 transition-all duration-300 shadow-lg hover:shadow-glow focus-visible:ring-2 focus-visible:ring-rose focus-visible:ring-offset-2",
+        "romantic-outline": "bg-transparent text-rose border border-rose hover:bg-rose/10 hover:-translate-y-0.5 transition-all duration-300 focus-visible:ring-2 focus-visible:ring-rose focus-visible:ring-offset-2",
       },
       size: {
         default: "h-10 px-4 py-2",

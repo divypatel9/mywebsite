@@ -77,12 +77,12 @@ const Index = () => {
         </div>
         
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#home" className="text-sm text-muted-text hover:text-rose transition-colors">Home</a>
-          <a href="#sorry" className="text-sm text-muted-text hover:text-rose transition-colors">Why I'm Sorry</a>
-          <a href="#promises" className="text-sm text-muted-text hover:text-rose transition-colors">Promises</a>
-          <a href="#story" className="text-sm text-muted-text hover:text-rose transition-colors">Our Story</a>
-          <a href="#letters" className="text-sm text-muted-text hover:text-rose transition-colors">Letters</a>
-          <a href="#gallery" className="text-sm text-muted-text hover:text-rose transition-colors">Gallery</a>
+          <a href="#home" className="text-sm text-text-secondary hover:text-rose transition-colors">Home</a>
+          <a href="#sorry" className="text-sm text-text-secondary hover:text-rose transition-colors">Why I'm Sorry</a>
+          <a href="#promises" className="text-sm text-text-secondary hover:text-rose transition-colors">Promises</a>
+          <a href="#story" className="text-sm text-text-secondary hover:text-rose transition-colors">Our Story</a>
+          <a href="#letters" className="text-sm text-text-secondary hover:text-rose transition-colors">Letters</a>
+          <a href="#gallery" className="text-sm text-text-secondary hover:text-rose transition-colors">Gallery</a>
         </div>
 
         <Button 
@@ -105,10 +105,10 @@ const Index = () => {
           <h1 className="font-heading text-6xl md:text-8xl font-bold mb-6 text-rose">
             I'm Sorry.<br />I Love You.
           </h1>
-          <p className="text-xl md:text-2xl text-muted-text max-w-3xl mx-auto mb-8 leading-relaxed">
-            I'm sorry for the moments I made heavy what should have felt light.<br />
-            I'm sorry for defending my point instead of protecting your heart.<br />
-            I love you—fully, honestly, patiently—and I want to earn your smile again.
+          <p className="text-xl md:text-2xl text-text-secondary max-w-3xl mx-auto mb-8 leading-relaxed">
+            I'm sorry for the moments I made heavy what should have felt <span className="highlight">light</span>.<br />
+            I'm sorry for defending my point instead of protecting your <span className="highlight">heart</span>.<br />
+            I <span className="highlight">love you</span>—fully, honestly, patiently—and I want to earn your smile again.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
@@ -156,12 +156,12 @@ const Index = () => {
             <h2 className="font-heading text-4xl md:text-5xl font-bold mb-8 text-rose">
               Why I'm Sorry
             </h2>
-            <div className="space-y-6 text-lg leading-relaxed text-muted-text">
+            <div className="space-y-6 text-lg leading-relaxed text-text-secondary">
               <p>
-                I'm sorry, {NAME}. I'm sorry for the raised tones, the stubborn pauses, the times I made you feel alone even when I was right there. I'm sorry I counted the argument more carefully than I counted your feelings. You deserved my gentleness, not my impatience. You deserved my listening, not my winning.
+                I'm sorry, {NAME}. I'm sorry for the raised tones, the stubborn pauses, the times I made you feel <span className="highlight">alone</span> even when I was right there. I'm sorry I counted the argument more carefully than I counted your <span className="highlight">feelings</span>. You deserved my <span className="highlight">gentleness</span>, not my impatience. You deserved my <span className="highlight">listening</span>, not my winning.
               </p>
               <p>
-                I'm not perfect, but I will be accountable. I will take the first breath, the first step back, the first "I'm sorry" every time. I won't let pride sit between us. I want to be the person you feel safest with—the place you come home to, not the storm you hide from.
+                I'm not perfect, but I will be <span className="highlight">accountable</span>. I will take the first breath, the first step back, the first "I'm sorry" every time. I won't let pride sit between us. I want to be the person you feel <span className="highlight">safest</span> with—the place you come <span className="highlight">home</span> to, not the storm you hide from.
               </p>
             </div>
           </div>
@@ -176,7 +176,7 @@ const Index = () => {
               "For making you doubt my steadiness—my steadiness starts now."
             ].map((apology, index) => (
               <Card key={index} className="card-soft p-4 border-l-4 border-rose">
-                <p className="text-muted-text">{apology}</p>
+                <p className="text-text-secondary">{apology}</p>
               </Card>
             ))}
           </div>
@@ -226,7 +226,7 @@ const Index = () => {
             <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-rose">
               My Promises
             </h2>
-            <p className="text-xl text-muted-text max-w-2xl mx-auto">
+            <p className="text-xl text-text-secondary max-w-2xl mx-auto">
               These are my vows to you, my commitment to love you better every day.
             </p>
           </div>
@@ -240,7 +240,7 @@ const Index = () => {
                 <h3 className="font-heading text-xl font-bold mb-4 text-gold">
                   {promise.title}
                 </h3>
-                <p className="text-muted-text leading-relaxed">
+                <p className="text-text-secondary leading-relaxed">
                   {promise.text}
                 </p>
               </Card>
@@ -299,7 +299,7 @@ const Index = () => {
                         <h3 className="font-heading text-2xl font-bold mb-4 text-gold">
                           {item.title}
                         </h3>
-                        <p className="text-muted-text text-lg leading-relaxed">
+                        <p className="text-text-secondary text-lg leading-relaxed">
                           {item.content}
                         </p>
                       </div>
@@ -333,7 +333,7 @@ const Index = () => {
         </div>
 
         <Card className="card-soft max-w-4xl mx-auto p-12">
-          <div className="prose prose-lg text-muted-text leading-relaxed space-y-6">
+          <div className="prose prose-lg text-text-secondary leading-relaxed space-y-6">
             <p className="text-xl font-medium text-rose mb-8">{NAME},</p>
             
             <p>
@@ -393,7 +393,7 @@ const Index = () => {
             <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-rose">
               Our Moments
             </h2>
-            <p className="text-xl text-muted-text">
+            <p className="text-xl text-text-secondary">
               Every photo tells our story
             </p>
           </div>
@@ -409,7 +409,7 @@ const Index = () => {
                   />
                 </div>
                 <div className="p-6">
-                  <p className="text-muted-text text-center italic">
+                  <p className="text-text-secondary text-center italic">
                     "{image.caption}"
                   </p>
                 </div>
@@ -444,7 +444,7 @@ const Index = () => {
                     <div className="w-6 h-6 rounded border-2 border-rose flex items-center justify-center mt-1">
                       <div className="w-3 h-3 bg-rose rounded"></div>
                     </div>
-                    <p className="text-muted-text text-lg">{dream}</p>
+                    <p className="text-text-secondary text-lg">{dream}</p>
                   </div>
                 ))}
               </div>
@@ -455,7 +455,7 @@ const Index = () => {
                 <h3 className="font-heading text-2xl font-bold mb-6 text-gold">
                   Let's Begin Again
                 </h3>
-                <p className="text-muted-text text-lg leading-relaxed mb-8">
+                <p className="text-text-secondary text-lg leading-relaxed mb-8">
                   Every sunrise is a chance to love you better. Every day is an opportunity to choose us. I'm ready to write our next chapter together—one filled with more laughter, more understanding, and more love than we've ever known.
                 </p>
                 <Button 
@@ -489,7 +489,7 @@ const Index = () => {
                 For You, Always
               </h2>
               
-              <p className="text-xl text-muted-text mb-8 leading-relaxed">
+              <p className="text-xl text-text-secondary mb-8 leading-relaxed">
                 Thank you for reading, {NAME}. If you'll have me, I'll spend every day loving you better.
               </p>
 
@@ -555,7 +555,7 @@ const Index = () => {
         <Card className="card-soft max-w-2xl mx-6 p-8 relative">
           <button 
             onClick={() => setShowModal(false)}
-            className="absolute top-4 right-4 text-muted-text hover:text-rose transition-colors"
+            className="absolute top-4 right-4 text-text-secondary hover:text-rose transition-colors"
           >
             ✕
           </button>
@@ -565,7 +565,7 @@ const Index = () => {
               My Message to You
             </h3>
             
-            <div className="space-y-4 text-muted-text leading-relaxed">
+            <div className="space-y-4 text-text-secondary leading-relaxed">
               <p className="text-lg font-medium text-rose">{NAME},</p>
               <p>If I could fold this page into a small, warm thing and tuck it in your pocket, I would...</p>
               <p>I will keep choosing you—when it's easy, and especially when it's not.</p>
@@ -588,7 +588,7 @@ const Index = () => {
           <HeartIcon />
           <span className="font-heading text-rose font-bold">Built for you, with love</span>
         </div>
-        <p className="text-muted-text text-sm">
+        <p className="text-text-secondary text-sm">
           December 2024 • From my heart to yours
         </p>
       </div>
@@ -596,7 +596,7 @@ const Index = () => {
   );
 
   return (
-    <div className="min-h-screen bg-bg text-text">
+    <div className="min-h-screen bg-bg text-text-primary">
       <Header />
       <main>
         <Hero />
