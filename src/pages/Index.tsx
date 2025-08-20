@@ -73,26 +73,12 @@ const Index = () => {
       <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <HeartIcon />
-          <span className="font-heading text-rose font-bold">Love</span>
+          <span className="font-heading text-rose font-bold">Divya Loves Kripa</span>
         </div>
         
-        <div className="hidden md:flex items-center space-x-8">
-          <a href="#home" className="text-sm text-text-secondary hover:text-rose transition-colors">Home</a>
-          <a href="#sorry" className="text-sm text-text-secondary hover:text-rose transition-colors">Why I'm Sorry</a>
-          <a href="#promises" className="text-sm text-text-secondary hover:text-rose transition-colors">Promises</a>
-          <a href="#story" className="text-sm text-text-secondary hover:text-rose transition-colors">Our Story</a>
-          <a href="#letters" className="text-sm text-text-secondary hover:text-rose transition-colors">Letters</a>
-          <a href="#gallery" className="text-sm text-text-secondary hover:text-rose transition-colors">Gallery</a>
-        </div>
+        
 
-        <Button 
-          onClick={() => setShowModal(true)}
-          variant="romantic"
-          size="sm"
-        >
-          <Mail className="w-4 h-4 mr-2" />
-          Play Message
-        </Button>
+        
       </nav>
     </header>
   );
@@ -102,33 +88,19 @@ const Index = () => {
       <div className="hero-gradient absolute inset-0"></div>
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="reveal-in">
-          <h1 className="font-heading text-6xl md:text-8xl font-bold mb-6 text-rose">
-            I'm Sorry.<br />I Love You.
-          </h1>
+          <h1 className="font-heading text-6xl md:text-8xl font-bold mb-6 text-text-primary">
+  Good Morning my Chikoo<br />Jay Shree Krishna🙏
+</h1>
+
           <p className="text-xl md:text-2xl text-text-secondary max-w-3xl mx-auto mb-8 leading-relaxed">
-            I'm sorry for the moments I made heavy what should have felt <span className="highlight">light</span>.<br />
+            I'm sorry for yesterday night. I doubted you. <span className="highlight"></span><br />
             I'm sorry for defending my point instead of protecting your <span className="highlight">heart</span>.<br />
-            I <span className="highlight">love you</span>—fully, honestly, patiently—and I want to earn your smile again.
+            I <span className="highlight">love you</span> with full heart, honest mind, patient soul and I want to earn your smile again.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              onClick={() => document.getElementById('letters')?.scrollIntoView({behavior: 'smooth'})}
-              variant="romantic"
-              size="lg"
-            >
-              Read My Letter
-            </Button>
-            <Button 
-              onClick={() => document.getElementById('story')?.scrollIntoView({behavior: 'smooth'})}
-              variant="romantic-outline"
-              size="lg"
-            >
-              See Our Story
-            </Button>
-          </div>
+         
         </div>
 
-        <div className="mt-16 flex justify-center space-x-4">
+        {/* <div className="mt-16 flex justify-center space-x-4">
           <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-rose">
             <img src="/lovable-uploads/3a6cc7ff-c2db-49b1-a242-08ab5cb33a36.png" alt="Us together" className="w-full h-full object-cover" />
           </div>
@@ -138,7 +110,7 @@ const Index = () => {
           <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-rose">
             <img src="/lovable-uploads/221b1ccf-13a0-4e42-acdf-11653d3263b2.png" alt="Beautiful you" className="w-full h-full object-cover" />
           </div>
-        </div>
+        </div> */}
 
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <ArrowDown className="w-6 h-6 text-rose" />
@@ -158,10 +130,10 @@ const Index = () => {
             </h2>
             <div className="space-y-6 text-lg leading-relaxed text-text-secondary">
               <p>
-                I'm sorry, {NAME}. I'm sorry for the raised tones, the stubborn pauses, the times I made you feel <span className="highlight">alone</span> even when I was right there. I'm sorry I counted the argument more carefully than I counted your <span className="highlight">feelings</span>. You deserved my <span className="highlight">gentleness</span>, not my impatience. You deserved my <span className="highlight">listening</span>, not my winning.
+                Babygirl I  am Sorry. I didn't mean to argue obviously, Even though I compared myself with you which is completely wrong and meaningless because, we do stuff for eachother not for making it count but instead to show our love and I am pretty sure what story I was trying to make and what I made on your birthday...the bad video...was actually just to make it heartfelt but that was crap. Sorry for that, mereko samaj nai aaya tha... Pan you guided me with the right direction and I made something just for you to smile and make a little special. I just made it without expectation for you to like and smile.
               </p>
               <p>
-                I'm not perfect, but I will be <span className="highlight">accountable</span>. I will take the first breath, the first step back, the first "I'm sorry" every time. I won't let pride sit between us. I want to be the person you feel <span className="highlight">safest</span> with—the place you come <span className="highlight">home</span> to, not the storm you hide from.
+                See this is true that I am not perfect and I know that, learning and evovling. But I want to learn for you and evolve for you and not against you. Togather we are best team and apart is unimaginable...we have saw ourselves during fights... So I don't want ego and pride to set distance between us emotionally when we already have distance of time and 12,000 Kilometers. So I am sorry that I didn't realised in which wrong direction I was going. 
               </p>
             </div>
           </div>
@@ -169,11 +141,12 @@ const Index = () => {
           <div className="reveal-in space-y-4">
             <h3 className="font-heading text-2xl font-bold mb-6 text-gold">Specific Apologies</h3>
             {[
-              "For interrupting you when you were vulnerable—your feelings deserved space.",
-              "For choosing being 'right' over being kind—kindness is the only victory I want.",
-              "For taking too long to cool down—you needed calm, not distance.",
-              "For not saying 'thank you' more—you give so much and I see it all.",
-              "For making you doubt my steadiness—my steadiness starts now."
+              "For interrupting you when you were taking about your feelings and you wanted being just heard",
+              "For choosing being 'me sahi hu' over caring about you",
+              "For taking too long to cool down when you needed calm by me and not distance from me.",
+              "For not saying 'thank you' more you give so much and I see it all.",
+              "For making you doubt my care and love. Please keep that steady  because it is always there",
+              "For making and proving myself right when time is not right"
             ].map((apology, index) => (
               <Card key={index} className="card-soft p-4 border-l-4 border-rose">
                 <p className="text-text-secondary">{apology}</p>
@@ -190,32 +163,32 @@ const Index = () => {
       {
         icon: <Heart className="w-8 h-8" />,
         title: "Loyalty",
-        text: "My heart chooses you every morning. I am present, devoted, and intentional in protecting us."
+        text: "My heart is only owned by you and you will always be queen of my heart"
       },
       {
         icon: <Star className="w-8 h-8" />,
         title: "Honesty", 
-        text: "I will tell the truth kindly, and hear the truth humbly. No silent punishments. No guessing games."
+        text: "I will tell the truth in any situation, and hear the truth humbly.No guessing games."
       },
       {
         icon: <Sparkles className="w-8 h-8" />,
         title: "Patience",
-        text: "I'll slow down when emotions run high. If I need time, I'll say it, and I'll return with care."
+        text: "I'll slow down when emotions run high. I will need some time and little care from you. Please"
       },
       {
         icon: <Heart className="w-8 h-8" />,
         title: "Effort",
-        text: "I'll invest in the small daily rituals—good morning messages, check-ins, date plans, and cheers for your wins."
+        text: "I will try to be creative and be commited to this. Masti, Majak, Pyaar, Care se bhare hue efforts"
       },
       {
         icon: <Star className="w-8 h-8" />,
         title: "Listening",
-        text: "I will listen to understand, not to reply. Your feelings set my pace."
+        text: "I will listen to understand, not to reply {thoda time lagega}. Your feelings are important obviously."
       },
       {
         icon: <Sparkles className="w-8 h-8" />,
         title: "Repair",
-        text: "After any conflict, I'll initiate repair within 24 hours—reflection, apology, and a plan."
+        text: "After any jagdas, I'll will try to heal it as soon as possible, I will need your support. Pretty Please"
       }
     ];
 
@@ -227,7 +200,7 @@ const Index = () => {
               My Promises
             </h2>
             <p className="text-xl text-text-secondary max-w-2xl mx-auto">
-              These are my vows to you, my commitment to love you better every day.
+              Ye kuch baate, which I truely believe and aapko yaad kara du.
             </p>
           </div>
 
@@ -255,25 +228,25 @@ const Index = () => {
     const timelineItems = [
       {
         title: "How We Met",
-        content: "I remember the first moment I saw you—the way the world went quiet and then brighter.",
-        image: "/lovable-uploads/3a6cc7ff-c2db-49b1-a242-08ab5cb33a36.png"
+        content: "Hum dono sharma te hue, TGR ke room me 5 min ki meeting. Hi, Maru naam Divya. Hello Maru naam Kripa se shuru hua tha ye kissa. Socha nahi tha inta khoobsurat hoga. Sharmili Kripa se mila Sahaasi Divya. Fir kya hua... Divya toh betha tha raah dekh kar firse milne ki usi week me jo possible nai hua untill next Sunday. Uske baad toh mann me ek hi khayal ki bas usko acha lag jau. Toh kahani shuru ho jo humesha Divya ne apne Khayal and sapno me sochi thi. Pyaar bhari, Masti bhari, Care wali, Soft Soft heart - touchy si life. " ,
+        // image: "/lovable-uploads/3a6cc7ff-c2db-49b1-a242-08ab5cb33a36.png"
       },
       {
         title: "Favorite Memory", 
-        content: "That one laugh you tried to hide behind your hand; I still chase it in everything I do."
+        content: "Undoubtedly this is from the day before I was leaving to US 7th August 2023. Kripa subah mast surprise dene ko aai apne naye naye fiance Divya ko. Baadme Gharwale bole ki jao beta upar time spent karo, baate karo, {Mummy ne bola ki jo gift laya hai woh de dena}, Kripa ko diya ek-ek karke saare gifts diye, Kripa ne gifts wale kapde pehen ke dikha rahi thi and bich bich me photo sessions. Usi bich Kripa ko mene {Divya} ne bethaya apne legs ke bich me and mirror me selfie lene ke liye and usi me Divya ko aaya bohot sara pyaar and Divya ne apne jeevan ki pehli puppy kar di Kripa ke gaal pe. And Kripa sharmate hui gir gai mere hatho me. Best thing ever happened in both of our lives. Dono ko kuch samaj nai aaya kya ho gaya."
       },
       {
         title: "Hard Moment",
-        content: "We've had storms. I won't deny them—but we stood through them, and I learned."
+        content: "Ye bhi usi time ka the next day when I was about to leave for US. Because mujhe pata tha me jaa raha hu ek naye adventure pe. But meri bholi Kripa ko nahi maloom tha ki ye ho raha hai. Uss din meri Kripa ke aankho me aasu bhi aa gaye. Uss raat alag ho gaye, bohot saare din ke liye, bohot sare kms ke liye and bohot bade time difference ke liye. Naya naya pyar hua tha, ek dusre se bohot nazdik se jud gaye the kuch dino me hi and ese alag ho gaye. Pan yaadies and bohot sara pyaar chodke gaya tha me and bohot bhara hua and bohot keemti pyaar leke bhi gaya tha me. Aaj bhi sochta hu ki woh jo masoom Divya and Kripa the woh samay ke sath badal gaye, sath me bade hue and evolve hue pan kuch doori reh hi gai humare bich me."
       },
       {
         title: "What I Learned",
-        content: "Love is not a debate to win; it's a person to hold. And that person is you.",
-        image: "/lovable-uploads/ce3293fd-3e1f-4233-af8e-ec9924fa61d6.png"
+        content: "Kripa ke sath mene bohot kuch sikha hai, Bhale hi hum dono long distance me hi the almost all the time, but har moment me I have realised I have got the jackpot of my life. Dono ki personlality kaafi alag hai, Pan sach kahu toh dono ne ek dusre se bohot kuch acha acha sikha hai. First till the last thing will always remain how to love, Becasue Kripa is the first girl in my life whom I loved unconditionally, apart from family member. With time things changes and I don't know when Kripa became part of my life, and everyday to be honest. Days are empty without her. Kripa was in the journey when a boy is turning into man and you my love Kripa have always helped me to to be that man and carved me everyday.",
+        // image: "/lovable-uploads/ce3293fd-3e1f-4233-af8e-ec9924fa61d6.png"
       },
       {
         title: "What's Next",
-        content: "More softness. More choosing each other. More dinners, walks, playlists, sunrises, and shared quiet."
+        content: "Now, I have to be more polite with you and also together. LOL. I have always chose you and I want to stick to it because as I said my life, day, hour, minutes are empty without you. So any decision, situation, anyone, everyone, but the you are always the person I will choose to be with. Everything starts and ends along with you. I want to go out with you, play with you, dance with you, eat with you and cook for/with you, build a life with you, be healthy and active with you. Mainly I want to stay and love you unconditionally. So, Kripali Vijaykumar Patel are you ready to be with me unconditionally?"
       }
     ];
 
@@ -334,27 +307,27 @@ const Index = () => {
 
         <Card className="card-soft max-w-4xl mx-auto p-12">
           <div className="prose prose-lg text-text-secondary leading-relaxed space-y-6">
-            <p className="text-xl font-medium text-rose mb-8">{NAME},</p>
+            <p className="text-xl font-medium text-rose mb-8">Beautiful Kripu,</p>
             
             <p>
-              If I could fold this page into a small, warm thing and tuck it in your pocket, I would. I want you to carry proof that I'm learning you, learning us. I'm learning that love is not loud. It's tender. It's the last slice saved for you, the text that says "home soon?", the hand that finds yours under the table.
+              Agar kuch short me kehna ho mujhe after 807 days toh that is, I am still learning you, learning about us. I am learning to love also love is soft and very kind. My eyes always look for you in the crowd of thousands. Every moment and every tick of clock is proves and justifies my growing love for you meri jaan.
             </p>
             
             <p>
-              I will keep choosing you—when it's easy, and especially when it's not. I'll keep choosing to be gentle with your heart. I'll keep choosing to be proud of us—because we're worth the effort.
+              I will always keep choosing you no matter what, I love to choose you on the easy days and I will involve fully with all heart and soul when it is tough. Mistakes are made and I am still little immature but I give you myself fully to teach with your kindness and care, because I have to be gentle and soft with your heart. Becuase at the end of the day happy kripa is all I want.
             </p>
             
             <p>
-              Thank you for every patience you've given me. For your light. For your laughter. For your courage to love me.
+              Thank you for being with me and choosing me everytime in your best and worst days, happiest and saddest days, either morning or night, with everyone and when you are alone. I love to be with you in every moment of our lives.
             </p>
             
             <p>
-              I'm sorry for the moments I didn't meet your tenderness with my own. I'm here now—with soft hands, listening eyes, and a heart that wants to be your safest place.
+              I am sorry for the moments I reacted immaturely and didn't acted the way you imagined me. But I am here now with the soft heart, bright eyes on you, listening ears, loving heart and a hand to hold on forever. 
             </p>
             
             <div className="mt-12 text-right">
               <p className="text-xl font-medium text-rose">With all my love,</p>
-              <p className="text-2xl font-heading font-bold text-gold mt-2">{ME}</p>
+              <p className="text-2xl font-heading font-bold text-gold mt-2">Your Devu</p>
             </div>
           </div>
         </Card>
@@ -365,23 +338,34 @@ const Index = () => {
   const Gallery = () => {
     const images = [
       {
+        src: "public/lovable-uploads/photo1.jpg",
+        caption: "Us together smiling",
+        alt: "Us together smiling"
+      },
+      {
+        src: "public/lovable-uploads/photo2.jpg", 
+        caption: "Sweet candid moment before distance",
+        alt: "Sweet candid moment"
+      },
+      {
+        src: "public/lovable-uploads/photo3.jpg",
+        caption: "I still choose this moment, again and again.",
+        alt: "Beautiful portrait"
+      },
+      {
         src: "/lovable-uploads/3a6cc7ff-c2db-49b1-a242-08ab5cb33a36.png",
         caption: "Where your smile makes time slow.",
         alt: "Us together smiling"
       },
       {
         src: "/lovable-uploads/d95fe47e-c451-4646-b6d1-d6b972f67e2b.png", 
-        caption: "The day felt lighter because you were there.",
+        caption: "Cutest day with the Queen of cutest",
         alt: "Sweet candid moment"
       },
-      {
-        src: "/lovable-uploads/221b1ccf-13a0-4e42-acdf-11653d3263b2.png",
-        caption: "I still choose this moment, again and again.",
-        alt: "Beautiful portrait"
-      },
+      
       {
         src: "/lovable-uploads/ce3293fd-3e1f-4233-af8e-ec9924fa61d6.png",
-        caption: "More of this. Always.",
+        caption: "Perfect together",
         alt: "Perfect together"
       }
     ];
@@ -429,124 +413,8 @@ const Index = () => {
       "Watch the sunrise wrapped in one blanket.",
       "Create a playlist for the next chapter of us."
     ];
-
-    return (
-      <section id="future" className="py-20">
-        <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="reveal-in">
-              <h2 className="font-heading text-4xl md:text-5xl font-bold mb-8 text-rose">
-                Our Next Chapters
-              </h2>
-              <div className="space-y-4">
-                {dreams.map((dream, index) => (
-                  <div key={index} className="flex items-start space-x-4">
-                    <div className="w-6 h-6 rounded border-2 border-rose flex items-center justify-center mt-1">
-                      <div className="w-3 h-3 bg-rose rounded"></div>
-                    </div>
-                    <p className="text-text-secondary text-lg">{dream}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-            
-            <div className="reveal-in">
-              <Card className="card-soft p-8">
-                <h3 className="font-heading text-2xl font-bold mb-6 text-gold">
-                  Let's Begin Again
-                </h3>
-                <p className="text-text-secondary text-lg leading-relaxed mb-8">
-                  Every sunrise is a chance to love you better. Every day is an opportunity to choose us. I'm ready to write our next chapter together—one filled with more laughter, more understanding, and more love than we've ever known.
-                </p>
-                <Button 
-                  onClick={() => document.getElementById('home')?.scrollIntoView({behavior: 'smooth'})}
-                  variant="romantic"
-                  className="w-full"
-                  size="lg"
-                >
-                  Let's Begin Again
-                </Button>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
-    );
-  };
-
-  const FinalSection = () => {
-    const triggerConfetti = () => {
-      setShowConfetti(true);
-      setTimeout(() => setShowConfetti(false), 3000);
-    };
-
-    return (
-      <section id="foryou" className="py-20 bg-bg-soft relative overflow-hidden">
-        <div className="container mx-auto px-6 text-center">
-          <Card className="card-soft max-w-2xl mx-auto p-12 relative">
-            <div className="reveal-in">
-              <h2 className="font-heading text-3xl md:text-4xl font-bold mb-8 text-rose">
-                For You, Always
-              </h2>
-              
-              <p className="text-xl text-text-secondary mb-8 leading-relaxed">
-                Thank you for reading, {NAME}. If you'll have me, I'll spend every day loving you better.
-              </p>
-
-              <div className="mb-8">
-                <svg width="200" height="60" viewBox="0 0 200 60" className="mx-auto">
-                  <path 
-                    d="M20 40 Q50 20 80 40 T140 40 Q170 30 180 40" 
-                    stroke="hsl(var(--gold))" 
-                    strokeWidth="2" 
-                    fill="none"
-                    className="signature-path"
-                    style={{
-                      strokeDasharray: 1000,
-                      strokeDashoffset: 1000,
-                      animation: 'draw-signature 2s ease-out forwards'
-                    }}
-                  />
-                </svg>
-              </div>
-
-              <Button 
-                onClick={triggerConfetti}
-                variant="romantic"
-                size="lg"
-                className="px-12 text-xl font-bold transform hover:scale-105 transition-transform duration-300"
-              >
-                I'm Yours
-              </Button>
-
-              {showConfetti && (
-                <div 
-                  className="fixed inset-0 pointer-events-none z-50"
-                  aria-live="polite"
-                  aria-label="Thank you for reading. I love you."
-                >
-                  {Array.from({length: 40}).map((_, i) => (
-                    <div
-                      key={i}
-                      className="absolute animate-bounce"
-                      style={{
-                        left: `${Math.random() * 100}%`,
-                        animationDelay: `${Math.random() * 2}s`,
-                        animationDuration: '3s'
-                      }}
-                    >
-                      <HeartIcon />
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
-          </Card>
-        </div>
-      </section>
-    );
-  };
-
+  }
+   
   const Modal = () => {
     if (!showModal) return null;
 
@@ -581,19 +449,7 @@ const Index = () => {
     );
   };
 
-  const Footer = () => (
-    <footer className="py-12 text-center border-t border-bg-soft">
-      <div className="container mx-auto px-6">
-        <div className="flex items-center justify-center space-x-2 mb-4">
-          <HeartIcon />
-          <span className="font-heading text-rose font-bold">Built for you, with love</span>
-        </div>
-        <p className="text-text-secondary text-sm">
-          December 2024 • From my heart to yours
-        </p>
-      </div>
-    </footer>
-  );
+
 
   return (
     <div className="min-h-screen bg-bg text-text-primary">
@@ -605,10 +461,9 @@ const Index = () => {
         <Timeline />
         <LetterSection />
         <Gallery />
-        <FutureSection />
-        <FinalSection />
+       
       </main>
-      <Footer />
+      {/* <Footer /> */}
       <Modal />
     </div>
   );
