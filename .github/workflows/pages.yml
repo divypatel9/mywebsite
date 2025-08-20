@@ -29,6 +29,9 @@ jobs:
       # Install deps (less strict than npm ci; avoids lockfile mismatch issues)
       - run: npm install
 
+      - run: npm ls @radix-ui/react-tooltip || true
+      - run: ls -la node_modules/@radix-ui/react-tooltip || true
+
       # Build Vite (outputs to dist/)
       - run: npm run build
 
