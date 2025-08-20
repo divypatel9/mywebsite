@@ -5,6 +5,7 @@ on:
     branches: [ "main" ]
   workflow_dispatch:
 
+# Needed so the deploy job can publish to Pages
 permissions:
   contents: write
   pages: write
@@ -28,7 +29,9 @@ jobs:
       - run: npm install
       - run: npm run build
 
-      - uses: actions/upload-pages-artifact@v3
+      # Upload exactly the built site root
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
 
