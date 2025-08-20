@@ -276,7 +276,7 @@ const Index = () => {
                           {item.content}
                         </p>
                       </div>
-                      {item.image && (
+                      {/* {item.image && (
                         <div className="w-full md:w-48 h-48 rounded-2xl overflow-hidden">
                           <img 
                             src={item.image} 
@@ -284,7 +284,7 @@ const Index = () => {
                             className="w-full h-full object-cover"
                           />
                         </div>
-                      )}
+                      )} */}
                     </div>
                   </Card>
                 </div>

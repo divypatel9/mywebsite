@@ -6,9 +6,9 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write   # ✅ FIXED (was read)
-  pages: write      # ✅ Required for deploy
-  id-token: write   # ✅ Required for deploy
+  contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: "pages"
