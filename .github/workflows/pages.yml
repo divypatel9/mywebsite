@@ -18,24 +18,26 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Prepare Pages environment
       - uses: actions/configure-pages@v5
 
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: "npm"
+          cache: npm
 
-      # Install deps (less strict than npm ci; avoids lockfile mismatch issues)
       - run: npm install
 
+      # (optional) prove tooltip exists
       - run: npm ls @radix-ui/react-tooltip || true
       - run: ls -la node_modules/@radix-ui/react-tooltip || true
 
-      # Build Vite (outputs to dist/)
       - run: npm run build
 
-      # Upload the build output
+      # ✅ hard checks: show dist and fail if index.html missing
+      - run: ls -la dist
+      - run: test -f dist/index.html
+      - run: test -f dist/404.html || echo "no 404.html (ok if you added public/404.html)"
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
