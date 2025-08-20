@@ -5,7 +5,6 @@ on:
     branches: [ "main" ]
   workflow_dispatch:
 
-# Keep repo-wide perms minimal; grant sensitive perms only to deploy job
 permissions:
   contents: read
 
@@ -19,17 +18,21 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Required for Pages (sets up build environment and paths)
+      # Prepare Pages environment
       - uses: actions/configure-pages@v5
 
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
-      - run: npm ci
+          cache: "npm"
+
+      # Install deps (less strict than npm ci; avoids lockfile mismatch issues)
+      - run: npm install
+
+      # Build Vite (outputs to dist/)
       - run: npm run build
 
-      # Upload the built site
+      # Upload the build output
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
@@ -40,7 +43,6 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    # Only the deploy job needs these perms
     permissions:
       pages: write
       id-token: write
