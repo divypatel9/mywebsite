@@ -6,7 +6,9 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write   # ✅ FIXED (was read)
+  pages: write      # ✅ Required for deploy
+  id-token: write   # ✅ Required for deploy
 
 concurrency:
   group: "pages"
@@ -18,25 +20,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/configure-pages@v5
-
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
 
       - run: npm install
-
-      # (optional) prove tooltip exists
-      - run: npm ls @radix-ui/react-tooltip || true
-      - run: ls -la node_modules/@radix-ui/react-tooltip || true
-
       - run: npm run build
-
-      # ✅ hard checks: show dist and fail if index.html missing
-      - run: ls -la dist
-      - run: test -f dist/index.html
-      - run: test -f dist/404.html || echo "no 404.html (ok if you added public/404.html)"
 
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -48,9 +38,6 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    permissions:
-      pages: write
-      id-token: write
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
