@@ -21,7 +21,7 @@ jobs:
 
       - run: npm ci
       - run: npm run build
-      - run: ls -la dist  # prove index.html exists
+      - run: ls -la dist
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

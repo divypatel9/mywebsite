@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -11,8 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "postbuild": "cp dist/index.html dist/404.html || copy dist\\index.html dist\\404.html"
-  
-},
+  },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
     "@radix-ui/react-accordion": "^1.2.11",
