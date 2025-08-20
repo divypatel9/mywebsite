@@ -1,13 +1,13 @@
 name: Deploy Vite site to GitHub Pages
+
 on:
   push:
     branches: [ "main" ]
   workflow_dispatch:
 
+# Keep repo-wide perms minimal; grant sensitive perms only to deploy job
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
   group: "pages"
@@ -18,21 +18,32 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      # Required for Pages (sets up build environment and paths)
+      - uses: actions/configure-pages@v5
+
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
       - run: npm ci
       - run: npm run build
+
+      # Upload the built site
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
+
   deploy:
     runs-on: ubuntu-latest
     needs: build
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    # Only the deploy job needs these perms
+    permissions:
+      pages: write
+      id-token: write
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
